@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Sairam Internet Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&family=Mukta:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --safe-area-inset-top: env(safe-area-inset-top);
+        --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      }
+      body {
+        font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+        background-color: #f8fbff;
+        color: #1a202c;
+        -webkit-tap-highlight-color: transparent;
+        overflow-x: hidden;
+        font-size: 14px;
+      }
+      .safe-area-pt { padding-top: var(--safe-area-inset-top); }
+      
+      /* Enhanced Creative Calligraphy Style */
+      .logo-calligraphy {
+        font-family: 'Mukta', sans-serif;
+        font-weight: 800;
+        background: linear-gradient(180deg, #ff3d00 0%, #ff8f00 45%, #e65100 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Increased vertical padding to completely eliminate clipping of any top/bottom strokes */
+        padding: 0.3em 0.15em; 
+        margin: -0.15em 0;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        /* Premium shadow effect for depth */
+        filter: drop-shadow(0 4px 6px rgba(255, 61, 0, 0.25));
+        /* Subtle text-shadow fallback for better definition */
+        text-shadow: 0px 0px 1px rgba(0,0,0,0.05);
+      }
+
+      .owner-name-font {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        letter-spacing: 0.05em;
+      }
+
+      .clay-card {
+        background: white;
+        border-radius: 1.25rem;
+        box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.04);
+      }
+
+      .glass-nav {
+        background: rgba(15, 23, 42, 0.96);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .floating { animation: float 3s ease-in-out infinite; }
+
+      @keyframes progress {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(200%); }
+      }
+      
+      .service-details-animation {
+        animation: slideInUpWithZoom 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      
+      @keyframes slideInUpWithZoom {
+        from { transform: translateY(50%) scale(0.98); opacity: 0; }
+        to { transform: translateY(0) scale(1); opacity: 1; }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+
+      /* Scrollbar Styling for Admin */
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
